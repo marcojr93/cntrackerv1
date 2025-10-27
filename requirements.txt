@@ -1,0 +1,11 @@
+streamlit==1.29.0
+pandas==2.2.1
+openpyxl
+xlrd
+plotly
+folium
+streamlit-folium
+pycountry
+datetime
+re
+calendar
