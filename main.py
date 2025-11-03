@@ -5,11 +5,13 @@ import pycountry
 import calendar
 
 # Função para obter o dataframe da aba SOON
-def load_data(uploaded_file):
-    if uploaded_file is not None:
-        df = pd.read_excel(uploaded_file, sheet_name='SOON')
+def load_data():
+    try:
+        df = pd.read_excel('assets/CONTAINER.xlsx', sheet_name='SOON', header=1)
         return df
-    return None
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        return None
 
 def generate_week_options():
     """Gera opções de semanas para os anos 2025, 2026 e 2027"""
@@ -94,19 +96,38 @@ def parse_week_date(date_str):
 
 def main():
     st.set_page_config(page_title='Ships Dashboard', layout='wide')
+    
+    # Logo centralizada no topo
+    col1, col2, col3 = st.columns([2, 1, 2])
+    with col2:
+        st.image('assets/logo.png', width=80)
+    
     st.title('Ships Monitoring Dashboard')
 
-    # Upload de arquivo
-    uploaded_file = st.file_uploader("Upload Excel file (with 'SOON' sheet)", type=['xlsx', 'xls'])
+    # Botão para carregar dados
+    if st.button("Load data", type="primary"):
+        df = load_data()
+        if df is None:
+            return
+        st.session_state.df = df
+        
+        # Encontrar a semana atual ao carregar dados
+        week_options = generate_week_options()
+        current_week_index = 0
+        today = datetime.today()
+        for i, (label, start, end) in enumerate(week_options):
+            if start <= today <= end:
+                current_week_index = i
+                break
+        st.session_state.week_index = current_week_index
+        
+        st.success("Data loaded successfully!")
     
-    if uploaded_file is None:
-        st.warning("Please upload an Excel file to continue.")
+    if 'df' not in st.session_state:
+        st.info("Click 'Load data' to start the analysis.")
         return
-
-    df = load_data(uploaded_file)
-    if df is None:
-        st.error("Could not load data from the uploaded file.")
-        return
+    
+    df = st.session_state.df
 
     tab1, tab2 = st.tabs(["Dashboard", "Map"])
 
@@ -162,6 +183,41 @@ def main():
             index=0
         )
         
+        # Se Monthly View for selecionado, mostrar dropdown de meses
+        selected_month_date = None
+        if analysis_interval == "Monthly View":
+            # Gerar opções de mês/ano para os próximos 24 meses
+            month_options = []
+            current_date = datetime(2025, 1, 1)
+            for i in range(36):  # 3 anos de opções
+                month_label = current_date.strftime("%B %Y")
+                month_options.append((month_label, current_date))
+                # Próximo mês
+                if current_date.month == 12:
+                    current_date = current_date.replace(year=current_date.year + 1, month=1)
+                else:
+                    current_date = current_date.replace(month=current_date.month + 1)
+            
+            # Encontrar o mês atual como padrão
+            today = datetime.today()
+            default_month_index = 0
+            for i, (label, date) in enumerate(month_options):
+                if date.year == today.year and date.month == today.month:
+                    default_month_index = i
+                    break
+            
+            selected_month_label = st.sidebar.selectbox(
+                "Choose month:",
+                options=[label for label, _ in month_options],
+                index=default_month_index
+            )
+            
+            # Encontrar a data do mês selecionado
+            for label, date in month_options:
+                if label == selected_month_label:
+                    selected_month_date = date
+                    break
+        
         # Encontrar dados da semana selecionada
         selected_week_data = None
         for label, start, end in week_options:
@@ -169,18 +225,24 @@ def main():
                 selected_week_data = (label, start, end)
                 break
         
-        # Aplica o parser inteligente para a coluna de datas (coluna S)
-        df['DELIVERY_DATE'] = df.iloc[:, 18].apply(parse_week_date)  # ETA FINAL PORT (coluna S)
-        df['AMOUNT'] = pd.to_numeric(df.iloc[:, 22], errors='coerce')  # Coluna W
+        # Aplica o parser inteligente para a coluna de datas (coluna T)
+        df['DELIVERY_DATE'] = df.iloc[:, 19].apply(parse_week_date)  # ETA FINAL PORT (coluna T)
+        df['AMOUNT'] = pd.to_numeric(df.iloc[:, 23], errors='coerce')  # Coluna X
 
         week_start, week_end = get_custom_week_range(selected_week_data)
         
         # Adjust date range based on analysis interval
         if analysis_interval == "Monthly View":
-            month_start = week_start.replace(day=1)
-            month_end = (month_start + timedelta(days=32)).replace(day=1) - timedelta(days=1)
-            analysis_start, analysis_end = month_start, month_end
-            interval_label = f"Month of {week_start.strftime('%B %Y')}"
+            if selected_month_date:
+                month_start = selected_month_date.replace(day=1)
+                month_end = (month_start + timedelta(days=32)).replace(day=1) - timedelta(days=1)
+                analysis_start, analysis_end = month_start, month_end
+                interval_label = f"Month of {selected_month_date.strftime('%B %Y')}"
+            else:
+                month_start = week_start.replace(day=1)
+                month_end = (month_start + timedelta(days=32)).replace(day=1) - timedelta(days=1)
+                analysis_start, analysis_end = month_start, month_end
+                interval_label = f"Month of {week_start.strftime('%B %Y')}"
         elif analysis_interval == "Quarterly View":
             quarter = (week_start.month - 1) // 3 + 1
             quarter_start = datetime(week_start.year, (quarter - 1) * 3 + 1, 1)
@@ -195,25 +257,54 @@ def main():
 
         # Filters usando o intervalo selecionado
         df_period = filter_by_custom_week(df, 'DELIVERY_DATE', analysis_start, analysis_end)
-        df_month = filter_by_custom_month(df, 'DELIVERY_DATE', week_start)
+        
+        # Para df_month, usar o mês selecionado se estiver em Monthly View
+        if analysis_interval == "Monthly View" and selected_month_date:
+            df_month = filter_by_custom_month(df, 'DELIVERY_DATE', selected_month_date)
+        else:
+            df_month = filter_by_custom_month(df, 'DELIVERY_DATE', week_start)
 
+        # Função para determinar se é navio ou caminhão
+        def is_truck(destination_value):
+            if pd.isna(destination_value):
+                return False
+            destination_str = str(destination_value).strip().upper()
+            return destination_str == 'TO DOOR'
+        
+        # Calcular estatísticas por tipo de transporte
+        df_period['IS_TRUCK'] = df_period.iloc[:, 20].apply(is_truck)  # Coluna U
+        df_month['IS_TRUCK'] = df_month.iloc[:, 20].apply(is_truck)    # Coluna U
+        
+        # Contadores por período
+        ships_period = len(df_period[~df_period['IS_TRUCK']])
+        trucks_period = len(df_period[df_period['IS_TRUCK']])
+        
+        # Contadores por mês
+        ships_month = len(df_month[~df_month['IS_TRUCK']])
+        trucks_month = len(df_month[df_month['IS_TRUCK']])
+        
         # KPIs
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric('Ships in Period', len(df_period))
-        col2.metric('Ships this Month', len(df_month))
-        col3.metric('Estimated Value (Period)', f"$ {df_period['AMOUNT'].sum():,.2f}")
-        col4.metric('Estimated Value (Month)', f"$ {df_month['AMOUNT'].sum():,.2f}")
-
-        # Optional DataFrame display
-        with st.expander('Show DataFrame'):
-            st.dataframe(df)
+        col1, col2, col3, col4, col5, col6 = st.columns(6)
+        col1.metric('🚢 Ships (Period)', ships_period)
+        col2.metric('🚛 Trucks (Period)', trucks_period)
+        col3.metric('🚢 Ships (Month)', ships_month)
+        col4.metric('🚛 Trucks (Month)', trucks_month)
+        
+        # Métricas de valor com fonte menor
+        with col5:
+            st.markdown("**💰 Value (Period)**")
+            st.markdown(f"<div style='font-size: 18px; font-weight: bold;'>$ {df_period['AMOUNT'].sum():,.0f}</div>", unsafe_allow_html=True)
+        
+        with col6:
+            st.markdown("**💰 Value (Month)**") 
+            st.markdown(f"<div style='font-size: 18px; font-weight: bold;'>$ {df_month['AMOUNT'].sum():,.0f}</div>", unsafe_allow_html=True)
 
         # Gráfico de barras horizontal
         st.markdown('---')
-        st.subheader('Monthly Delivery Forecast (by Ship)')
+        st.subheader(f'Delivery Forecast - {interval_label}')
 
-        # Filter only current month deliveries and remove invalid dates
-        df_graf = df_month.dropna(subset=['DELIVERY_DATE'])
+        # Filter deliveries for selected period and remove invalid dates
+        df_graf = df_period.dropna(subset=['DELIVERY_DATE'])
         if not df_graf.empty:
             # Calculate days until arrival from today
             today = datetime.now()
@@ -222,14 +313,17 @@ def main():
             # Debug: Check for zero or NaN values
             df_graf = df_graf.dropna(subset=['DAYS_UNTIL_ARRIVAL'])
             
-            # Function to get transport emoji based on SHIPPING column
-            def get_transport_emoji(shipping_value):
-                if pd.isna(shipping_value) or str(shipping_value).strip() in ['-', '']:
+            # Function to get transport emoji based on DESTINATION column
+            def get_transport_emoji(destination_value):
+                if pd.isna(destination_value):
+                    return '🚢'
+                destination_str = str(destination_value).strip().upper()
+                if destination_str == 'TO DOOR':
                     return '🚛'
                 return '🚢'
             
             # Create new label with appropriate transport emoji: PO - Product - Supplier
-            df_graf['TRANSPORT_EMOJI'] = df_graf.iloc[:, 11].apply(get_transport_emoji)
+            df_graf['TRANSPORT_EMOJI'] = df_graf.iloc[:, 20].apply(get_transport_emoji)  # Coluna U (índice 20)
             df_graf['LABEL'] = (
                 df_graf['TRANSPORT_EMOJI'] + ' ' +
                 df_graf.iloc[:, 1].astype(str) + ' - ' +  # PO number (column B)
@@ -273,15 +367,18 @@ def main():
             st.plotly_chart(fig, use_container_width=True)
 
         else:
-            st.info('No deliveries scheduled for the current month.')
+            st.info(f'No deliveries scheduled for the selected period ({interval_label}).')
 
+        # Optional DataFrame display (movido para depois do gráfico)
+        with st.expander('Show DataFrame'):
+            st.dataframe(df)
 
     with tab2:
         from maps import render_map_tab
         # Passar dados da semana selecionada para a aba de mapas
         week_start, week_end = get_custom_week_range(selected_week_data)
         week_label = f"Week {week_start.strftime('%d-%b')} to {week_end.strftime('%d-%b')}"
-        render_map_tab(uploaded_file, week_start, week_end, week_label)
+        render_map_tab(None, week_start, week_end, week_label)
 
 
 # Garante execução do app Streamlit

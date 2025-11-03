@@ -70,15 +70,15 @@ def get_country_coordinates(country_name):
 def render_map_tab(uploaded_file, week_start, week_end, week_label):
     st.subheader(f'Ships Map View - {week_label}')
     
-    # Carregar dados
-    if uploaded_file is not None:
-        df = pd.read_excel(uploaded_file, sheet_name='SOON')
-    else:
-        st.error("No file uploaded")
+    # Carregar dados do arquivo fixo
+    try:
+        df = pd.read_excel('assets/CONTAINER.xlsx', sheet_name='SOON', header=1)
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
         return
     
     # Parse das datas
-    df['DELIVERY_DATE'] = df.iloc[:, 20].apply(parse_week_date)
+    df['DELIVERY_DATE'] = df.iloc[:, 19].apply(parse_week_date)
     
     # Filtrar pelos dados da semana selecionada
     mask = (df['DELIVERY_DATE'] >= week_start) & (df['DELIVERY_DATE'] <= week_end)

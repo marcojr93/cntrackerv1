@@ -1097,288 +1097,191 @@
         }
     },
     "HERE": {
-        "normalDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "exploreDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day",
+            "variant": "explore.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDay"
+            "name": "HERE.exploreDay"
         },
-        "normalDayCustom": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "liteDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.custom",
+            "variant": "lite.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayCustom"
+            "name": "HERE.liteDay"
         },
-        "normalDayGrey": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "logisticsDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.grey",
+            "variant": "logistics.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayGrey"
+            "name": "HERE.logisticsDay"
         },
-        "normalDayMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "topoDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.mobile",
+            "variant": "topo.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayMobile"
+            "name": "HERE.topoDay"
         },
-        "normalDayGreyMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "logisticsNight": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.grey.mobile",
+            "variant": "logistics.night",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayGreyMobile"
+            "name": "HERE.logisticsNight"
         },
-        "normalDayTransit": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "exploreNight": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.transit",
+            "variant": "explore.night",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayTransit"
+            "name": "HERE.exploreNight"
         },
-        "normalDayTransitMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "topoNight": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day.transit.mobile",
+            "variant": "topo.night",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalDayTransitMobile"
+            "name": "HERE.topoNight"
         },
-        "normalDayTraffic": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "liteNight": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "traffic",
-            "variant": "normal.traffic.day",
-            "max_zoom": 20,
-            "type": "traffictile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.normalDayTraffic"
-        },
-        "normalNight": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.night",
+            "variant": "lite.night",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalNight"
+            "name": "HERE.liteNight"
         },
-        "normalNightMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "exploreSatelliteDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.night.mobile",
+            "variant": "explore.satellite.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalNightMobile"
+            "name": "HERE.exploreSatelliteDay"
         },
-        "normalNightGrey": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "liteSatelliteDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.night.grey",
+            "variant": "lite.satellite.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalNightGrey"
+            "name": "HERE.liteSatelliteDay"
         },
-        "normalNightGreyMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+        "logisticsSatelliteDay": {
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.night.grey.mobile",
+            "variant": "logistics.satellite.day",
             "max_zoom": 20,
             "type": "maptile",
             "language": "eng",
             "format": "png8",
             "size": "256",
-            "name": "HERE.normalNightGreyMobile"
-        },
-        "normalNightTransit": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "base",
-            "variant": "normal.night.transit",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.normalNightTransit"
-        },
-        "normalNightTransitMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "base",
-            "variant": "normal.night.transit.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.normalNightTransitMobile"
-        },
-        "reducedDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "base",
-            "variant": "reduced.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.reducedDay"
-        },
-        "reducedNight": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "base",
-            "variant": "reduced.night",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.reducedNight"
+            "name": "HERE.logisticsSatelliteDay"
         },
         "basicMap": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day",
+            "variant": "explore.day",
             "max_zoom": 20,
             "type": "basetile",
             "language": "eng",
@@ -1387,15 +1290,14 @@
             "name": "HERE.basicMap"
         },
         "mapLabels": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
-            "variant": "normal.day",
+            "variant": "explore.day",
             "max_zoom": 20,
             "type": "labeltile",
             "language": "eng",
@@ -1404,15 +1306,14 @@
             "name": "HERE.mapLabels"
         },
         "trafficFlow": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "traffic",
-            "variant": "normal.day",
+            "variant": "explore.day",
             "max_zoom": 20,
             "type": "flowtile",
             "language": "eng",
@@ -1421,13 +1322,12 @@
             "name": "HERE.trafficFlow"
         },
         "carnavDayGrey": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
             "variant": "carnav.day.grey",
             "max_zoom": 20,
@@ -1438,13 +1338,12 @@
             "name": "HERE.carnavDayGrey"
         },
         "hybridDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "hybrid.day",
             "max_zoom": 20,
@@ -1455,13 +1354,12 @@
             "name": "HERE.hybridDay"
         },
         "hybridDayMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "hybrid.day.mobile",
             "max_zoom": 20,
@@ -1472,13 +1370,12 @@
             "name": "HERE.hybridDayMobile"
         },
         "hybridDayTransit": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "hybrid.day.transit",
             "max_zoom": 20,
@@ -1489,13 +1386,12 @@
             "name": "HERE.hybridDayTransit"
         },
         "hybridDayGrey": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "hybrid.grey.day",
             "max_zoom": 20,
@@ -1505,31 +1401,13 @@
             "size": "256",
             "name": "HERE.hybridDayGrey"
         },
-        "hybridDayTraffic": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
-            "base": "traffic",
-            "variant": "hybrid.traffic.day",
-            "max_zoom": 20,
-            "type": "traffictile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HERE.hybridDayTraffic"
-        },
         "pedestrianDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
             "variant": "pedestrian.day",
             "max_zoom": 20,
@@ -1540,13 +1418,12 @@
             "name": "HERE.pedestrianDay"
         },
         "pedestrianNight": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "base",
             "variant": "pedestrian.night",
             "max_zoom": 20,
@@ -1557,13 +1434,12 @@
             "name": "HERE.pedestrianNight"
         },
         "satelliteDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "satellite.day",
             "max_zoom": 20,
@@ -1574,13 +1450,12 @@
             "name": "HERE.satelliteDay"
         },
         "terrainDay": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "terrain.day",
             "max_zoom": 20,
@@ -1591,13 +1466,12 @@
             "name": "HERE.terrainDay"
         },
         "terrainDayMobile": {
-            "url": "https://{s}.{base}.maps.api.here.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?app_id={app_id}&app_code={app_code}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
+            "url": "https://maps.hereapi.com/v3/base/mc/{z}/{x}/{y}/{format}?style={variant}&size={size}&apiKey={app_id}&lg={language}",
+            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://platform.here.com\">HERE</a>",
             "attribution": "Map (C) 1987-2025 HERE",
             "subdomains": "1234",
             "mapID": "newest",
-            "app_id": "<insert your app_id here>",
-            "app_code": "<insert your app_code here>",
+            "apiKey": "<insert your apiKey here>",
             "base": "aerial",
             "variant": "terrain.day.mobile",
             "max_zoom": 20,
@@ -1606,457 +1480,6 @@
             "format": "png8",
             "size": "256",
             "name": "HERE.terrainDayMobile"
-        }
-    },
-    "HEREv3": {
-        "normalDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDay"
-        },
-        "normalDayCustom": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.custom",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayCustom"
-        },
-        "normalDayGrey": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.grey",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayGrey"
-        },
-        "normalDayMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayMobile"
-        },
-        "normalDayGreyMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.grey.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayGreyMobile"
-        },
-        "normalDayTransit": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.transit",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayTransit"
-        },
-        "normalDayTransitMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day.transit.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalDayTransitMobile"
-        },
-        "normalNight": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNight"
-        },
-        "normalNightMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNightMobile"
-        },
-        "normalNightGrey": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night.grey",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNightGrey"
-        },
-        "normalNightGreyMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night.grey.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNightGreyMobile"
-        },
-        "normalNightTransit": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night.transit",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNightTransit"
-        },
-        "normalNightTransitMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.night.transit.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.normalNightTransitMobile"
-        },
-        "reducedDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "reduced.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.reducedDay"
-        },
-        "reducedNight": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "reduced.night",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.reducedNight"
-        },
-        "basicMap": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day",
-            "max_zoom": 20,
-            "type": "basetile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.basicMap"
-        },
-        "mapLabels": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "normal.day",
-            "max_zoom": 20,
-            "type": "labeltile",
-            "language": "eng",
-            "format": "png",
-            "size": "256",
-            "name": "HEREv3.mapLabels"
-        },
-        "trafficFlow": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "traffic",
-            "variant": "normal.day",
-            "max_zoom": 20,
-            "type": "flowtile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.trafficFlow",
-            "status": "broken"
-        },
-        "carnavDayGrey": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "carnav.day.grey",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.carnavDayGrey"
-        },
-        "hybridDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "hybrid.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.hybridDay"
-        },
-        "hybridDayMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "hybrid.day.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.hybridDayMobile"
-        },
-        "hybridDayTransit": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "hybrid.day.transit",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.hybridDayTransit"
-        },
-        "hybridDayGrey": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "hybrid.grey.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.hybridDayGrey"
-        },
-        "pedestrianDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "pedestrian.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.pedestrianDay"
-        },
-        "pedestrianNight": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "base",
-            "variant": "pedestrian.night",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.pedestrianNight"
-        },
-        "satelliteDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "satellite.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.satelliteDay"
-        },
-        "terrainDay": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "terrain.day",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.terrainDay"
-        },
-        "terrainDayMobile": {
-            "url": "https://{s}.{base}.maps.ls.hereapi.com/maptile/2.1/{type}/{mapID}/{variant}/{z}/{x}/{y}/{size}/{format}?apiKey={apiKey}&lg={language}",
-            "html_attribution": "Map &copy; 1987-2025 <a href=\"http://developer.here.com\">HERE</a>",
-            "attribution": "Map (C) 1987-2025 HERE",
-            "subdomains": "1234",
-            "mapID": "newest",
-            "apiKey": "<insert your apiKey here>",
-            "base": "aerial",
-            "variant": "terrain.day.mobile",
-            "max_zoom": 20,
-            "type": "maptile",
-            "language": "eng",
-            "format": "png8",
-            "size": "256",
-            "name": "HEREv3.terrainDayMobile"
         }
     },
     "FreeMapSK": {
@@ -3065,35 +2488,12 @@
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 21,
+            "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS",
             "name": "GeoportailFrance.orthos",
-            "TileMatrixSet": "PM_0_21",
-            "apikey": "your_api_key_here"
-        },
-        "500k": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    40.38,
-                    -6.0
-                ],
-                [
-                    51.45,
-                    11.15
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 11,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "500k",
-            "name": "GeoportailFrance.500k",
-            "TileMatrixSet": "PM_0_11",
+            "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
         "Acces_Biomethane": {
@@ -3116,6 +2516,52 @@
             "style": "ACCES.BIOMETHANE",
             "variant": "ACCES.BIOMETHANE",
             "name": "GeoportailFrance.Acces_Biomethane",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Admin_express_cog_carto_pe_Latest": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ADMIN-EXPRESS-COG-CARTO-PE.LATEST",
+            "name": "GeoportailFrance.Admin_express_cog_carto_pe_Latest",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Adminexpress_cog_carto_pe_2025": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ADMINEXPRESS-COG-CARTO-PE.2025",
+            "name": "GeoportailFrance.Adminexpress_cog_carto_pe_2025",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -3810,6 +3256,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Cadastres_Solaires_Detailles": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.15047
+                ],
+                [
+                    51.0991,
+                    9.57054
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "INSTALLATIONS.PV.SOL",
+            "variant": "CADASTRES.SOLAIRES.DETAILLES",
+            "name": "GeoportailFrance.Cadastres_Solaires_Detailles",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Cadastres_Solaires_Locaux": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -4063,6 +3532,75 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Dalles_bloc_e": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.2743,
+                    0.937634
+                ],
+                [
+                    46.6001,
+                    1.23023
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "DALLES_BLOC_E",
+            "name": "GeoportailFrance.Dalles_bloc_e",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Dalles_bloc_i": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.2941,
+                    0.118961
+                ],
+                [
+                    46.6895,
+                    0.948431
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "DALLES_BLOC_I",
+            "name": "GeoportailFrance.Dalles_bloc_i",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Dalles_stjulien": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    46.5514,
+                    0.495277
+                ],
+                [
+                    46.5662,
+                    0.516629
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "DALLES_STJULIEN",
+            "name": "GeoportailFrance.Dalles_stjulien",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
         "Debroussaillement": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -4109,6 +3647,52 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Dgcl_2025_Voirie_communale": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "DGCL.2025.voirie-communale",
+            "name": "GeoportailFrance.Dgcl_2025_Voirie_communale",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Dgcl_2025_Voirie_departementale": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "DGCL.2025.voirie-departementale",
+            "name": "GeoportailFrance.Dgcl_2025_Voirie_departementale",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Dreal_Zonage_pinel": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -4130,6 +3714,29 @@
             "variant": "DREAL.ZONAGE_PINEL",
             "name": "GeoportailFrance.Dreal_Zonage_pinel",
             "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Dalles_test_3m": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.5411,
+                    3.67633
+                ],
+                [
+                    43.5432,
+                    3.9529
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "Dalles_Test_3M",
+            "name": "GeoportailFrance.Dalles_test_3m",
+            "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
         "Edugeo_Landuse_Agriculture2012": {
@@ -6664,7 +6271,122 @@
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
+        "Ignf_bd-haie-v1_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.0,
+                    -6.0
+                ],
+                [
+                    52.0,
+                    10.0
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_BD-HAIE-V1_2020",
+            "name": "GeoportailFrance.Ignf_bd-haie-v1_2020",
+            "TileMatrixSet": "PM_4_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_cartes_scan-1000": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.2891,
+                    -6.42088
+                ],
+                [
+                    51.444,
+                    13.55
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/jpeg",
+            "style": "SCAN1000",
+            "variant": "IGNF_CARTES_SCAN-1000",
+            "name": "GeoportailFrance.Ignf_cartes_scan-1000",
+            "TileMatrixSet": "PM_0_10",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_cartes_scan-regional": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.8097,
+                    -6.42088
+                ],
+                [
+                    51.4441,
+                    12.138
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 12,
+            "format": "image/jpeg",
+            "style": "SCANREG",
+            "variant": "IGNF_CARTES_SCAN-REGIONAL",
+            "name": "GeoportailFrance.Ignf_cartes_scan-regional",
+            "TileMatrixSet": "PM_0_12",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_cosia_2017-2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -80.0,
+                    -180.0
+                ],
+                [
+                    80.0,
+                    180.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_COSIA_2017-2020",
+            "name": "GeoportailFrance.Ignf_cosia_2017-2020",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_cosia_2021-2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -80.0,
+                    -180.0
+                ],
+                [
+                    80.0,
+                    180.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_COSIA_2021-2023",
+            "name": "GeoportailFrance.Ignf_cosia_2021-2023",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_cosia_2024": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -6682,8 +6404,8 @@
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
-            "variant": "IGNF_COSIA_2021-2023",
-            "name": "GeoportailFrance.Ignf_cosia_2021-2023",
+            "variant": "IGNF_COSIA_2024",
+            "name": "GeoportailFrance.Ignf_cosia_2024",
             "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
@@ -6710,18 +6432,41 @@
             "TileMatrixSet": "PM_6_17",
             "apikey": "your_api_key_here"
         },
+        "Ignf_forets-anciennes": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_FORETS-ANCIENNES",
+            "name": "GeoportailFrance.Ignf_forets-anciennes",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Ignf_lidar_hd_mnh_elevation_Elevationgridcoverage_Shadow": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.5,
-                    -5.5
+                    -80.0,
+                    -179.9
                 ],
                 [
-                    52.0,
-                    10.0
+                    80.0,
+                    179.9
                 ]
             ],
             "min_zoom": 0,
@@ -6739,12 +6484,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.5,
-                    -5.5
+                    -80.0,
+                    -179.9
                 ],
                 [
-                    52.0,
-                    10.0
+                    80.0,
+                    179.9
                 ]
             ],
             "min_zoom": 0,
@@ -6762,12 +6507,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.5,
-                    -5.5
+                    -80.0,
+                    -179.9
                 ],
                 [
-                    52.0,
-                    10.0
+                    80.0,
+                    179.9
                 ]
             ],
             "min_zoom": 0,
@@ -6777,6 +6522,351 @@
             "variant": "IGNF_LIDAR-HD_MNT_ELEVATION.ELEVATIONGRIDCOVERAGE.SHADOW",
             "name": "GeoportailFrance.Ignf_lidar_hd_mnt_elevation_Elevationgridcoverage_Shadow",
             "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_masque_foret_2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3215,
+                    -5.52321
+                ],
+                [
+                    50.9718,
+                    9.65507
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_MASQUE-FORET.2021-2023",
+            "name": "GeoportailFrance.Ignf_masque_foret_2021_2023",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_nature-en-ville_2021-2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_NATURE-EN-VILLE_2021-2023",
+            "name": "GeoportailFrance.Ignf_nature-en-ville_2021-2023",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_orthoimagery_Orthophotos_mixte_Bdortho": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.6583,
+                    5.41162
+                ],
+                [
+                    45.1291,
+                    7.09197
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "IGNF_ORTHOIMAGERY.ORTHOPHOTOS-MIXTE.BDORTHO",
+            "name": "GeoportailFrance.Ignf_orthoimagery_Orthophotos_mixte_Bdortho",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_orthoimagery_Orthophotos_mixte_Ortho_express": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.6583,
+                    5.41162
+                ],
+                [
+                    45.1291,
+                    7.09197
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "IGNF_ORTHOIMAGERY.ORTHOPHOTOS-MIXTE.ORTHO-EXPRESS",
+            "name": "GeoportailFrance.Ignf_orthoimagery_Orthophotos_mixte_Ortho_express",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_photovoltaique-sol_2017-2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_PHOTOVOLTAIQUE-SOL_2017-2020",
+            "name": "GeoportailFrance.Ignf_photovoltaique-sol_2017-2020",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_photovoltaique-sol_2021-2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_PHOTOVOLTAIQUE-SOL_2021-2023",
+            "name": "GeoportailFrance.Ignf_photovoltaique-sol_2021-2023",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-administration-locale": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-ADMINISTRATION-LOCALE",
+            "name": "GeoportailFrance.Ignf_poi-administration-locale",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-associations-culture-jeunesse": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-ASSOCIATIONS-CULTURE-JEUNESSE",
+            "name": "GeoportailFrance.Ignf_poi-associations-culture-jeunesse",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-droit-justice": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-DROIT-JUSTICE",
+            "name": "GeoportailFrance.Ignf_poi-droit-justice",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-economie-finances-consommation": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-ECONOMIE-FINANCES-CONSOMMATION",
+            "name": "GeoportailFrance.Ignf_poi-economie-finances-consommation",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-enseignement-recherche": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-ENSEIGNEMENT-RECHERCHE",
+            "name": "GeoportailFrance.Ignf_poi-enseignement-recherche",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-environnement-logement-transports": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-ENVIRONNEMENT-LOGEMENT-TRANSPORTS",
+            "name": "GeoportailFrance.Ignf_poi-environnement-logement-transports",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-securite-defense": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-SECURITE-DEFENSE",
+            "name": "GeoportailFrance.Ignf_poi-securite-defense",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-social-sante": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-SOCIAL-SANTE",
+            "name": "GeoportailFrance.Ignf_poi-social-sante",
+            "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Ignf_poi-travail-emploi-formation": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "IGNF_POI-TRAVAIL-EMPLOI-FORMATION",
+            "name": "GeoportailFrance.Ignf_poi-travail-emploi-formation",
+            "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
         "Ign_nl_test_st_amand": {
@@ -7329,6 +7419,29 @@
             "variant": "INSTALLATIONS.PV.SOL",
             "name": "GeoportailFrance.Installations_Pv_Sol",
             "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Ks_scan1000": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    40.3635,
+                    -5.23491
+                ],
+                [
+                    45.8939,
+                    -2.57402
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 10,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "KS_scan1000",
+            "name": "GeoportailFrance.Ks_scan1000",
+            "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
         "Landcover_Cha00": {
@@ -9286,6 +9399,29 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
+        "Landuse_Agriculture2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4756,
+                    -63.3725
+                ],
+                [
+                    51.3121,
+                    55.9259
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "LANDUSE.AGRICULTURE2024",
+            "name": "GeoportailFrance.Landuse_Agriculture2024",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Lgv_edugeo_archeologie_pyr-png_fxx_wm_20170210": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9585,29 +9721,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Ocsge_Construction_2010": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.CONSTRUCTION.2010",
-            "name": "GeoportailFrance.Ocsge_Construction_2010",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Ocsge_Construction_2016_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9700,146 +9813,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Ocsge_Constructions_2002": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2002",
-            "name": "GeoportailFrance.Ocsge_Constructions_2002",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Constructions_2011": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2011",
-            "name": "GeoportailFrance.Ocsge_Constructions_2011",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Constructions_2014": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2014",
-            "name": "GeoportailFrance.Ocsge_Constructions_2014",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Constructions_2016": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2016",
-            "name": "GeoportailFrance.Ocsge_Constructions_2016",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Constructions_2017": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    14.2395,
-                    -61.6644
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2017",
-            "name": "GeoportailFrance.Ocsge_Constructions_2017",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Constructions_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3043,
-                    -0.291052
-                ],
-                [
-                    44.0864,
-                    1.2122
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.CONSTRUCTIONS.2019",
-            "name": "GeoportailFrance.Ocsge_Constructions_2019",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Ocsge_Couverture": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -9860,123 +9833,6 @@
             "style": "normal",
             "variant": "OCSGE.COUVERTURE",
             "name": "GeoportailFrance.Ocsge_Couverture",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Couverture_2002": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.COUVERTURE.2002",
-            "name": "GeoportailFrance.Ocsge_Couverture_2002",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Couverture_2010": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.COUVERTURE.2010",
-            "name": "GeoportailFrance.Ocsge_Couverture_2010",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Couverture_2011": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.COUVERTURE.2011",
-            "name": "GeoportailFrance.Ocsge_Couverture_2011",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Couverture_2014": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.COUVERTURE.2014",
-            "name": "GeoportailFrance.Ocsge_Couverture_2014",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Couverture_2016": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.COUVERTURE.2016",
-            "name": "GeoportailFrance.Ocsge_Couverture_2016",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -10003,29 +9859,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Ocsge_Couverture_2017": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    14.2395,
-                    -61.6644
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.COUVERTURE.2017",
-            "name": "GeoportailFrance.Ocsge_Couverture_2017",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Ocsge_Couverture_2017_2020": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -10046,29 +9879,6 @@
             "style": "normal",
             "variant": "OCSGE.COUVERTURE.2017-2020",
             "name": "GeoportailFrance.Ocsge_Couverture_2017_2020",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Couverture_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3043,
-                    -0.291052
-                ],
-                [
-                    44.0864,
-                    1.2122
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.COUVERTURE.2019",
-            "name": "GeoportailFrance.Ocsge_Couverture_2019",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -10118,123 +9928,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Ocsge_Usage_2002": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.USAGE.2002",
-            "name": "GeoportailFrance.Ocsge_Usage_2002",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Usage_2010": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.USAGE.2010",
-            "name": "GeoportailFrance.Ocsge_Usage_2010",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Usage_2011": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.USAGE.2011",
-            "name": "GeoportailFrance.Ocsge_Usage_2011",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Usage_2014": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.366,
-                    -5.13902
-                ],
-                [
-                    51.089,
-                    9.55982
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "OCSGE.USAGE.2014",
-            "name": "GeoportailFrance.Ocsge_Usage_2014",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here",
-            "status": "broken"
-        },
-        "Ocsge_Usage_2016": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    41.3252,
-                    -5.15047
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.USAGE.2016",
-            "name": "GeoportailFrance.Ocsge_Usage_2016",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Ocsge_Usage_2016_2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -10255,29 +9948,6 @@
             "style": "normal",
             "variant": "OCSGE.USAGE.2016-2017",
             "name": "GeoportailFrance.Ocsge_Usage_2016_2017",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Usage_2017": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    14.2395,
-                    -61.6644
-                ],
-                [
-                    51.0991,
-                    9.57054
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.USAGE.2017",
-            "name": "GeoportailFrance.Ocsge_Usage_2017",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -10304,29 +9974,6 @@
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Ocsge_Usage_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.3043,
-                    -0.291052
-                ],
-                [
-                    44.0864,
-                    1.2122
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.USAGE.2019",
-            "name": "GeoportailFrance.Ocsge_Usage_2019",
-            "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
         "Ocsge_Usage_2021_2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -10348,52 +9995,6 @@
             "variant": "OCSGE.USAGE.2021-2023",
             "name": "GeoportailFrance.Ocsge_Usage_2021_2023",
             "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Visu_2016": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.2815,
-                    -0.318517
-                ],
-                [
-                    44.0543,
-                    1.22575
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 18,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.VISU.2016",
-            "name": "GeoportailFrance.Ocsge_Visu_2016",
-            "TileMatrixSet": "PM_6_18",
-            "apikey": "your_api_key_here"
-        },
-        "Ocsge_Visu_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    43.2815,
-                    -0.321664
-                ],
-                [
-                    44.1082,
-                    1.22575
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 18,
-            "format": "image/png",
-            "style": "nolegend",
-            "variant": "OCSGE.VISU.2019",
-            "name": "GeoportailFrance.Ocsge_Visu_2019",
-            "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
         "Ofb_Zones_Exclues": {
@@ -10486,29 +10087,6 @@
             "variant": "ORTHO-EDUGEO_PYR-PNG_WLD_WM",
             "name": "GeoportailFrance.Ortho-edugeo_pyr-png_wld_wm",
             "TileMatrixSet": "PM_6_18",
-            "apikey": "your_api_key_here"
-        },
-        "Ortho-express-2020_pyr-jpg_wld_wm_wmts2": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHO-EXPRESS-2020_PYR-JPG_WLD_WM_WMTS2",
-            "name": "GeoportailFrance.Ortho-express-2020_pyr-jpg_wld_wm_wmts2",
-            "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Edugeo_Ajaccio1975": {
@@ -12328,27 +11906,73 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Ortho_sat_Pleiades_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    1.93254,
+                    -63.1891
+                ],
+                [
+                    18.1429,
+                    -51.5925
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2023",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2023",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Ortho_sat_Pleiades_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    17.9802,
+                    -63.1796
+                ],
+                [
+                    47.1589,
+                    -56.0958
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 18,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2024",
+            "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2024",
+            "TileMatrixSet": "PM_0_18",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Ortho_sat_Pleiades_2025": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    -13.0277,
-                    44.9613
+                    -21.3978,
+                    1.43481
                 ],
                 [
-                    -12.6208,
-                    45.3115
+                    49.247,
+                    55.8519
                 ]
             ],
-            "min_zoom": 4,
+            "min_zoom": 0,
             "max_zoom": 18,
-            "format": "image/jpeg",
+            "format": "image/png",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHO-SAT.PLEIADES.2025",
             "name": "GeoportailFrance.Orthoimagery_Ortho_sat_Pleiades_2025",
-            "TileMatrixSet": "PM_4_18",
+            "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Ortho_sat_Pleiades_Mayotte_2024_06": {
@@ -12656,12 +12280,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.2593,
-                    -5.57103
+                    1.82643,
+                    -54.709
                 ],
                 [
-                    51.1123,
-                    10.7394
+                    51.0991,
+                    9.5705
                 ]
             ],
             "min_zoom": 0,
@@ -12679,11 +12303,11 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    41.2581,
+                    41.0,
                     -5.18838
                 ],
                 [
-                    50.9429,
+                    51.5,
                     9.63
                 ]
             ],
@@ -12904,98 +12528,6 @@
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
-        "Orthoimagery_Orthophotos_Irc_express_2018": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2018",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2018",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Irc_express_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2019",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2019",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Irc_express_2020": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 6,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2020",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2020",
-            "TileMatrixSet": "PM_6_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Irc_express_2021": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2021",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2021",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
         "Orthoimagery_Orthophotos_Irc_express_2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -13039,6 +12571,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2024",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2024",
+            "TileMatrixSet": "PM_0_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Irc_express_2025": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.5
+                ],
+                [
+                    75.0,
+                    179.5
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC-EXPRESS.2025",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_express_2025",
             "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
@@ -13194,13 +12749,13 @@
                     8.25765
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2018",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2018",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2019": {
@@ -13217,13 +12772,13 @@
                     9.66314
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2019",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2019",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2020": {
@@ -13232,21 +12787,21 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    42.9454,
-                    -2.68142
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    49.4512,
-                    7.74363
+                    80.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 0,
+            "min_zoom": 6,
             "max_zoom": 19,
             "format": "image/jpeg",
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2020",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2020",
-            "TileMatrixSet": "PM_0_19",
+            "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
         "Orthoimagery_Orthophotos_Irc_2021": {
@@ -13315,6 +12870,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2023",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2023",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Irc_2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.IRC.2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Irc_2024",
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
@@ -13479,121 +13057,6 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
-        "Orthoimagery_Orthophotos_Ortho_express_2017": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2017",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2017",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Ortho_express_2018": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2018",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2018",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Ortho_express_2019": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2019",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2019",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Ortho_express_2020": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 19,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2020",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2020",
-            "TileMatrixSet": "PM_0_19",
-            "apikey": "your_api_key_here"
-        },
-        "Orthoimagery_Orthophotos_Ortho_express_2021": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -75.0,
-                    -179.5
-                ],
-                [
-                    75.0,
-                    179.5
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 20,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2021",
-            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2021",
-            "TileMatrixSet": "PM_0_20",
-            "apikey": "your_api_key_here"
-        },
         "Orthoimagery_Orthophotos_Ortho_express_2023": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -13637,6 +13100,29 @@
             "style": "normal",
             "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2024",
             "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2024",
+            "TileMatrixSet": "PM_0_19",
+            "apikey": "your_api_key_here"
+        },
+        "Orthoimagery_Orthophotos_Ortho_express_2025": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.5
+                ],
+                [
+                    75.0,
+                    179.5
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS.ORTHO-EXPRESS.2025",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos_Ortho_express_2025",
             "TileMatrixSet": "PM_0_19",
             "apikey": "your_api_key_here"
         },
@@ -14215,6 +13701,29 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Orthophotos2016_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2016-2020",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2016_2020",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
         "Orthoimagery_Orthophotos2017": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14376,6 +13885,75 @@
             "TileMatrixSet": "PM_6_19",
             "apikey": "your_api_key_here"
         },
+        "Orthoimagery_Orthophotos2024": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -75.0,
+                    -179.0
+                ],
+                [
+                    75.0,
+                    179.0
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 19,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "ORTHOIMAGERY.ORTHOPHOTOS2024",
+            "name": "GeoportailFrance.Orthoimagery_Orthophotos2024",
+            "TileMatrixSet": "PM_6_19",
+            "apikey": "your_api_key_here"
+        },
+        "Parcs_jardins_2017_2020": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PARCS-JARDINS.2017-2020",
+            "name": "GeoportailFrance.Parcs_jardins_2017_2020",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Parcs_jardins_2021_2023": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "PARCS-JARDINS.2021-2023",
+            "name": "GeoportailFrance.Parcs_jardins_2021_2023",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
         "Parking_Sup_500": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -14446,14 +14024,60 @@
             "apikey": "your_api_key_here",
             "status": "broken"
         },
-        "Pcrs_chantier_d046_crige": {
+        "Pcrs_metropole_montpellier": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    44.436,
-                    1.44147
+                    43.4666,
+                    3.65671
+                ],
+                [
+                    43.767,
+                    4.06599
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_Metropole_Montpellier",
+            "name": "GeoportailFrance.Pcrs_metropole_montpellier",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Pcrs_chantier_200m": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    48.5211,
+                    -2.20895
+                ],
+                [
+                    48.7339,
+                    -1.51488
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 22,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "PCRS_chantier_200m",
+            "name": "GeoportailFrance.Pcrs_chantier_200m",
+            "TileMatrixSet": "2154_5cm_6_22",
+            "apikey": "your_api_key_here"
+        },
+        "Pcrs_chantier_d034": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.4357,
+                    1.41634
                 ],
                 [
                     44.4632,
@@ -14464,8 +14088,8 @@
             "max_zoom": 22,
             "format": "image/jpeg",
             "style": "normal",
-            "variant": "PCRS_chantier_D046_CRIGE",
-            "name": "GeoportailFrance.Pcrs_chantier_d046_crige",
+            "variant": "PCRS_chantier_D034",
+            "name": "GeoportailFrance.Pcrs_chantier_d034",
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
@@ -14492,50 +14116,50 @@
             "TileMatrixSet": "2154_5cm_6_22",
             "apikey": "your_api_key_here"
         },
-        "Plan_ign_074_gris_n15": {
+        "Planign_Lidar_Sursol": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    45.4544,
-                    5.47119
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    46.5192,
-                    7.56134
+                    80.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 15,
+            "min_zoom": 6,
+            "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
-            "variant": "PLAN_IGN_074_GRIS_N15",
-            "name": "GeoportailFrance.Plan_ign_074_gris_n15",
-            "TileMatrixSet": "PM_0_15",
+            "variant": "PLANIGN.LIDAR.SURSOL",
+            "name": "GeoportailFrance.Planign_Lidar_Sursol",
+            "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
-        "Plan_ign_074_n10_gris": {
+        "Planign_Lidar_Terrain": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    45.4544,
-                    5.47119
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    46.5192,
-                    7.56134
+                    80.0,
+                    180.0
                 ]
             ],
-            "min_zoom": 0,
-            "max_zoom": 10,
+            "min_zoom": 6,
+            "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
-            "variant": "PLAN_IGN_074_N10_GRIS",
-            "name": "GeoportailFrance.Plan_ign_074_n10_gris",
-            "TileMatrixSet": "PM_0_10",
+            "variant": "PLANIGN.LIDAR.TERRAIN",
+            "name": "GeoportailFrance.Planign_Lidar_Terrain",
+            "TileMatrixSet": "PM_6_18",
             "apikey": "your_api_key_here"
         },
         "Points_Injection_Biomethane": {
@@ -15826,7 +15450,7 @@
             "TileMatrixSet": "PM_0_17",
             "apikey": "your_api_key_here"
         },
-        "Patinat_apb": {
+        "Patrinat_apb": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -15844,12 +15468,219 @@
             "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "Patinat_APB",
-            "name": "GeoportailFrance.Patinat_apb",
+            "variant": "Patrinat_APB",
+            "name": "GeoportailFrance.Patrinat_apb",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Patinat_pn": {
+        "Patrinat_apg": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.918,
+                    -2.56166
+                ],
+                [
+                    49.958,
+                    4.61007
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_APG",
+            "name": "GeoportailFrance.Patrinat_apg",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_aphn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    44.1823,
+                    -1.68188
+                ],
+                [
+                    50.2546,
+                    6.89156
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_APHN",
+            "name": "GeoportailFrance.Patrinat_aphn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_aplg": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.6778,
+                    -5.13928
+                ],
+                [
+                    50.1024,
+                    9.45655
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_APLG",
+            "name": "GeoportailFrance.Patrinat_aplg",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_bios": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -16.6412,
+                    -146.483
+                ],
+                [
+                    50.8555,
+                    8.9138
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_BIOS",
+            "name": "GeoportailFrance.Patrinat_bios",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_bpm": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -52.0775,
+                    -151.423
+                ],
+                [
+                    48.9465,
+                    167.652
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_BPM",
+            "name": "GeoportailFrance.Patrinat_bpm",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_cdl": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.384,
+                    -63.1449
+                ],
+                [
+                    51.0871,
+                    55.8344
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_CDL",
+            "name": "GeoportailFrance.Patrinat_cdl",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_cen": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.9114,
+                    -2.37011
+                ],
+                [
+                    50.9004,
+                    8.7204
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_CEN",
+            "name": "GeoportailFrance.Patrinat_cen",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_geoparc": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.6587,
+                    -4.6447
+                ],
+                [
+                    48.7093,
+                    6.86482
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_GEOPARC",
+            "name": "GeoportailFrance.Patrinat_geoparc",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_inpg": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3841,
+                    -61.79
+                ],
+                [
+                    51.0908,
+                    55.8369
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_INPG",
+            "name": "GeoportailFrance.Patrinat_inpg",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_pn": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -15867,12 +15698,104 @@
             "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "Patinat_PN",
-            "name": "GeoportailFrance.Patinat_pn",
+            "variant": "Patrinat_PN",
+            "name": "GeoportailFrance.Patrinat_pn",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Patinat_rb": {
+        "Patrinat_pnm": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -14.5314,
+                    -62.8104
+                ],
+                [
+                    50.8177,
+                    46.6711
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_PNM",
+            "name": "GeoportailFrance.Patrinat_pnm",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_pnr": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    3.9057,
+                    -61.229
+                ],
+                [
+                    50.9625,
+                    9.48876
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_PNR",
+            "name": "GeoportailFrance.Patrinat_pnr",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_pprnn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    14.4077,
+                    -60.8371
+                ],
+                [
+                    14.4217,
+                    -60.8275
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_PPRNN",
+            "name": "GeoportailFrance.Patrinat_pprnn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_ramsar": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -49.7844,
+                    -149.928
+                ],
+                [
+                    50.8421,
+                    166.999
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_RAMSAR",
+            "name": "GeoportailFrance.Patrinat_ramsar",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_rb": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -15890,12 +15813,81 @@
             "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "Patinat_RB",
-            "name": "GeoportailFrance.Patinat_rb",
+            "variant": "Patrinat_RB",
+            "name": "GeoportailFrance.Patrinat_rb",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
-        "Patinat_rnn": {
+        "Patrinat_ripn": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    42.987,
+                    4.9386
+                ],
+                [
+                    48.0329,
+                    6.81356
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_RIPN",
+            "name": "GeoportailFrance.Patrinat_ripn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_rnc": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2918,
+                    8.53417
+                ],
+                [
+                    43.0279,
+                    9.51855
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_RNC",
+            "name": "GeoportailFrance.Patrinat_rnc",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_rncfs": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    42.6048,
+                    -2.90555
+                ],
+                [
+                    48.9675,
+                    8.23355
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_RNCFS",
+            "name": "GeoportailFrance.Patrinat_rncfs",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_rnn": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -15913,8 +15905,192 @@
             "max_zoom": 16,
             "format": "image/png",
             "style": "normal",
-            "variant": "Patinat_RNN",
-            "name": "GeoportailFrance.Patinat_rnn",
+            "variant": "Patrinat_RNN",
+            "name": "GeoportailFrance.Patrinat_rnn",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_rnr": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    4.56312,
+                    -61.2334
+                ],
+                [
+                    51.0233,
+                    7.68631
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_RNR",
+            "name": "GeoportailFrance.Patrinat_rnr",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_sic": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2576,
+                    -9.98215
+                ],
+                [
+                    51.3127,
+                    9.62075
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_SIC",
+            "name": "GeoportailFrance.Patrinat_sic",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_znieff1": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3875,
+                    -63.0559
+                ],
+                [
+                    51.0908,
+                    55.8367
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZNIEFF1",
+            "name": "GeoportailFrance.Patrinat_znieff1",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_znieff1_mer": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3912,
+                    -61.8038
+                ],
+                [
+                    50.9672,
+                    55.8443
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZNIEFF1_MER",
+            "name": "GeoportailFrance.Patrinat_znieff1_mer",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_znieff2": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3898,
+                    -61.7163
+                ],
+                [
+                    51.0646,
+                    55.8362
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZNIEFF2",
+            "name": "GeoportailFrance.Patrinat_znieff2",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_znieff2_mer": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3929,
+                    -54.0155
+                ],
+                [
+                    50.3056,
+                    55.8418
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZNIEFF2_MER",
+            "name": "GeoportailFrance.Patrinat_znieff2_mer",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_zpr": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -51.5947,
+                    -2.70339
+                ],
+                [
+                    48.5264,
+                    81.5278
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZPR",
+            "name": "GeoportailFrance.Patrinat_zpr",
+            "TileMatrixSet": "PM_6_16",
+            "apikey": "your_api_key_here"
+        },
+        "Patrinat_zps": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.2576,
+                    -10.0
+                ],
+                [
+                    51.3127,
+                    9.61923
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "Patrinat_ZPS",
+            "name": "GeoportailFrance.Patrinat_zps",
             "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
@@ -16031,29 +16207,6 @@
             "variant": "SCAN-EDUGEO_PYR-PNG_FXX_WM",
             "name": "GeoportailFrance.Scan-edugeo_pyr-png_fxx_wm",
             "TileMatrixSet": "PM_6_16",
-            "apikey": "your_api_key_here"
-        },
-        "Scan1000_pyr-jpeg_wld_wm_wmts_3d": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    40.2891,
-                    -6.42088
-                ],
-                [
-                    51.444,
-                    13.55
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 10,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "SCAN1000_PYR-JPEG_WLD_WM_WMTS_3D",
-            "name": "GeoportailFrance.Scan1000_pyr-jpeg_wld_wm_wmts_3d",
-            "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
         "Securoute_Te_1te": {
@@ -16545,12 +16698,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    43.1533,
-                    0.0354912
+                    -80.0,
+                    -180.0
                 ],
                 [
-                    49.6969,
-                    6.02353
+                    80.0,
+                    180.0
                 ]
             ],
             "min_zoom": 6,
@@ -16583,6 +16736,29 @@
             "variant": "TN.RoadTransportNetwork.RoadLink",
             "name": "GeoportailFrance.Tn_Roadtransportnetwork_Roadlink",
             "TileMatrixSet": "PM_6_18",
+            "apikey": "your_api_key_here"
+        },
+        "Tourbieres_zones_humides_Bcae": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.3998,
+                    -63.1614
+                ],
+                [
+                    51.0991,
+                    55.8465
+                ]
+            ],
+            "min_zoom": 6,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "TOURBIERES_ZONES-HUMIDES.BCAE",
+            "name": "GeoportailFrance.Tourbieres_zones_humides_Bcae",
+            "TileMatrixSet": "PM_6_16",
             "apikey": "your_api_key_here"
         },
         "Traces_Rando_Hivernale": {
@@ -16622,13 +16798,13 @@
                     55.9259
                 ]
             ],
-            "min_zoom": 10,
+            "min_zoom": 8,
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
             "variant": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST",
             "name": "GeoportailFrance.Transportnetwork_Commontransportelements_Markerpost",
-            "TileMatrixSet": "PM_10_18",
+            "TileMatrixSet": "PM_8_18",
             "apikey": "your_api_key_here"
         },
         "Transportnetwork_Commontransportelements_Markerpost_visu": {
@@ -16645,13 +16821,13 @@
                     55.9259
                 ]
             ],
-            "min_zoom": 6,
+            "min_zoom": 8,
             "max_zoom": 18,
             "format": "image/png",
             "style": "normal",
             "variant": "TRANSPORTNETWORK.COMMONTRANSPORTELEMENTS.MARKERPOST_VISU",
             "name": "GeoportailFrance.Transportnetwork_Commontransportelements_Markerpost_visu",
-            "TileMatrixSet": "PM_6_18",
+            "TileMatrixSet": "PM_8_18",
             "apikey": "your_api_key_here"
         },
         "Transportnetworks_Railways": {
@@ -16752,12 +16928,12 @@
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    40.576,
-                    -9.88147
+                    -44.6281,
+                    -63.7846
                 ],
                 [
-                    51.4428,
-                    11.6781
+                    51.2159,
+                    67.5485
                 ]
             ],
             "min_zoom": 3,
@@ -16815,6 +16991,52 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
+        "Zones-a-prospecter-forets-subnaturelles": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    41.3252,
+                    -5.1505
+                ],
+                [
+                    51.0991,
+                    9.5705
+                ]
+            ],
+            "min_zoom": 4,
+            "max_zoom": 16,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "ZONES-A-PROSPECTER-FORETS-SUBNATURELLES",
+            "name": "GeoportailFrance.Zones-a-prospecter-forets-subnaturelles",
+            "TileMatrixSet": "PM_4_16",
+            "apikey": "your_api_key_here"
+        },
+        "Adminexpress-kdep-jpb-test-raster_wmts": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    -21.4215,
+                    -61.875
+                ],
+                [
+                    51.2711,
+                    55.8984
+                ]
+            ],
+            "min_zoom": 0,
+            "max_zoom": 11,
+            "format": "image/jpeg",
+            "style": "normal",
+            "variant": "adminexpress-kdep-jpb-test-raster_wmts",
+            "name": "GeoportailFrance.Adminexpress-kdep-jpb-test-raster_wmts",
+            "TileMatrixSet": "PM_0_11",
+            "apikey": "your_api_key_here"
+        },
         "Hedge_Hedge": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
@@ -16836,29 +17058,6 @@
             "variant": "hedge.hedge",
             "name": "GeoportailFrance.Hedge_Hedge",
             "TileMatrixSet": "PM_7_18",
-            "apikey": "your_api_key_here"
-        },
-        "Hydro_ardennes_pyramide_raster_wmts": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    47.9409,
-                    1.99937
-                ],
-                [
-                    50.2587,
-                    5.87344
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 16,
-            "format": "image/jpeg",
-            "style": "normal",
-            "variant": "hydro_ardennes_pyramide_raster_wmts",
-            "name": "GeoportailFrance.Hydro_ardennes_pyramide_raster_wmts",
-            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         },
         "Orthophoto_1947_calvados": {
@@ -16976,27 +17175,27 @@
             "TileMatrixSet": "PM_0_18",
             "apikey": "your_api_key_here"
         },
-        "Pcrs_chantier_cd45_test032025_wmts": {
+        "Scan1000_corse_jbn": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
             "bounds": [
                 [
-                    44.4357,
-                    1.41634
+                    41.2349,
+                    8.35477
                 ],
                 [
-                    44.4632,
-                    1.45428
+                    43.0475,
+                    9.75281
                 ]
             ],
             "min_zoom": 0,
-            "max_zoom": 22,
+            "max_zoom": 10,
             "format": "image/jpeg",
             "style": "normal",
-            "variant": "pcrs_chantier_cd45_test032025_wmts",
-            "name": "GeoportailFrance.Pcrs_chantier_cd45_test032025_wmts",
-            "TileMatrixSet": "2154_5cm_0_22",
+            "variant": "scan1000_corse_jbn",
+            "name": "GeoportailFrance.Scan1000_corse_jbn",
+            "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
         "Testsrd-pcrs86-poitiers": {
@@ -17022,7 +17221,7 @@
             "TileMatrixSet": "PM_0_10",
             "apikey": "your_api_key_here"
         },
-        "Test_mamp_echantillon_pcrs": {
+        "Test_mamp_pcrs": {
             "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
             "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
             "attribution": "Geoportail France",
@@ -17040,8 +17239,31 @@
             "max_zoom": 21,
             "format": "image/png",
             "style": "normal",
-            "variant": "test_mamp_echantillon_pcrs",
-            "name": "GeoportailFrance.Test_mamp_echantillon_pcrs",
+            "variant": "test_mamp_pcrs",
+            "name": "GeoportailFrance.Test_mamp_pcrs",
+            "TileMatrixSet": "2154_5cm_8_21",
+            "apikey": "your_api_key_here"
+        },
+        "Test_mamp_pcrs_f_jp2": {
+            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
+            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
+            "attribution": "Geoportail France",
+            "bounds": [
+                [
+                    43.3964,
+                    5.0246
+                ],
+                [
+                    43.4236,
+                    5.06254
+                ]
+            ],
+            "min_zoom": 8,
+            "max_zoom": 21,
+            "format": "image/png",
+            "style": "normal",
+            "variant": "test_mamp_pcrs_f_jp2",
+            "name": "GeoportailFrance.Test_mamp_pcrs_f_jp2",
             "TileMatrixSet": "2154_5cm_8_21",
             "apikey": "your_api_key_here"
         },
@@ -17066,52 +17288,6 @@
             "variant": "tuto_scan1000_SRD",
             "name": "GeoportailFrance.Tuto_scan1000_srd",
             "TileMatrixSet": "PM_0_10",
-            "apikey": "your_api_key_here"
-        },
-        "Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    29.9888,
-                    -25.0
-                ],
-                [
-                    70.0,
-                    44.9977
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 6,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "zzz_nl_test_prevair_O3_CHI_AN_EURO_DAVE_20241201_D_1",
-            "name": "GeoportailFrance.Zzz_nl_test_prevair_o3_chi_an_euro_dave_20241201_d_1",
-            "TileMatrixSet": "PM_0_6",
-            "apikey": "your_api_key_here"
-        },
-        "Zzz_nl_test_reserve_biosphere": {
-            "url": "https://data.geopf.fr/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&STYLE={style}&TILEMATRIXSET={TileMatrixSet}&FORMAT={format}&LAYER={variant}&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}",
-            "html_attribution": "<a target=\"_blank\"href=\"https://www.geoportail.gouv.fr/\">Geoportail France</a>",
-            "attribution": "Geoportail France",
-            "bounds": [
-                [
-                    -21.3768,
-                    -61.5181
-                ],
-                [
-                    50.7622,
-                    55.8053
-                ]
-            ],
-            "min_zoom": 0,
-            "max_zoom": 16,
-            "format": "image/png",
-            "style": "normal",
-            "variant": "zzz_nl_test_reserve_biosphere",
-            "name": "GeoportailFrance.Zzz_nl_test_reserve_biosphere",
-            "TileMatrixSet": "PM_0_16",
             "apikey": "your_api_key_here"
         }
     },
