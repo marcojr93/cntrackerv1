@@ -5,9 +5,9 @@ import pycountry
 import calendar
 
 # Função para obter o dataframe da aba SOON
-def load_data():
+def load_data(uploaded_file):
     try:
-        df = pd.read_excel('assets/CONTAINER.xlsx', sheet_name='SOON', header=1)
+        df = pd.read_excel(uploaded_file, sheet_name='SOON', header=1)
         return df
     except Exception as e:
         st.error(f"Error loading data: {e}")
@@ -104,27 +104,40 @@ def main():
     
     st.title('Ships Monitoring Dashboard')
 
-    # Botão para carregar dados
-    if st.button("Load data", type="primary"):
-        df = load_data()
-        if df is None:
-            return
-        st.session_state.df = df
-        
-        # Encontrar a semana atual ao carregar dados
-        week_options = generate_week_options()
-        current_week_index = 0
-        today = datetime.today()
-        for i, (label, start, end) in enumerate(week_options):
-            if start <= today <= end:
-                current_week_index = i
-                break
-        st.session_state.week_index = current_week_index
-        
-        st.success("Data loaded successfully!")
+    # Upload de arquivo
+    uploaded_file = st.file_uploader(
+        "Upload your CONTAINER.xlsx file", 
+        type=['xlsx', 'xls'],
+        help="Please upload the Excel file containing the SOON sheet with container data"
+    )
+    
+    # Botão para carregar dados (só aparece se arquivo foi carregado)
+    if uploaded_file is not None:
+        if st.button("Load data", type="primary"):
+            df = load_data(uploaded_file)
+            if df is None:
+                return
+            st.session_state.df = df
+            
+            # Encontrar a semana atual ao carregar dados
+            week_options = generate_week_options()
+            current_week_index = 0
+            today = datetime.today()
+            for i, (label, start, end) in enumerate(week_options):
+                if start <= today <= end:
+                    current_week_index = i
+                    break
+            st.session_state.week_index = current_week_index
+            
+            st.success("Data loaded successfully!")
+    else:
+        st.info("Please upload an Excel file to start the analysis.")
     
     if 'df' not in st.session_state:
-        st.info("Click 'Load data' to start the analysis.")
+        if uploaded_file is None:
+            st.info("Please upload an Excel file to start the analysis.")
+        else:
+            st.info("Click 'Load data' to start the analysis.")
         return
     
     df = st.session_state.df
